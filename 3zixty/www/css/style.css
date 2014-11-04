@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Calligraffitti|Satisfy);
+.custom-icon {
+    font-size: 64px;
+    color : #ff8e87;
+
+}
+.bg{
+    background-image: url('../img/lucia.jpg');
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.textCenter
+{text-align:center;}
+.less-padding {
+    padding: 5px !important;
+
+}
+
+.logotxt{
+    font-size: 30px;
+padding-top: 15px;
+    font-family: 'Calligraffitti', cursive;
+    color: white;
+
+}
+

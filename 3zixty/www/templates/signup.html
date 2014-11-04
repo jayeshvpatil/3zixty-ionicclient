@@ -1,0 +1,102 @@
+
+<ion-view>
+    <ion-content class="bg">
+
+        <br>
+        <br>
+         <div class="textCenter">
+          <h3  style="color:#ffffff">Spontaneous Travel anyone?</h3><br>
+      </div>
+      <div class="textCenter ">
+          <h4  style="color:#ffffff">Join TravelNow</h4>
+      </div>
+        <div class="textCenter">
+            <button class="button button-clear button-assertive">
+                <p ng-show="loading"><i class="ion-loading-b"></i></p>
+                <p ng-show="error">{{ error.message }}</p>
+            </button>
+        </div>
+        <div class="row">
+<div class="col col-10"></div>
+        <div class="col col-40 ">
+            <button class="button button-assertive" ui-sref="#home">Google
+            <i  ua-oauth-link="google" class="icon ion-icon-social-google-plus"></i>
+            </button>
+
+        </div>
+
+        <div class="col col-40">
+            <button class=" button button-positive">Facebook
+                <i ua-oauth-link="facebook" class="icon ion-social-facebook"></i>
+            </button>
+        </div>
+            <div class="col col-10"></div>
+            </div>
+        <div class="textCenter">
+            <h6 style="color:#ffffff">We won't post without your approval</h6>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br><br> <br><br>
+        <br>
+        <form ua-signup ua-login>
+            <div class="" >
+                <div class="row">
+                    <div class="col-10">
+
+                    </div>
+                    <div class="col">
+                        <div class="item item-input-inset less-padding ">
+                            <i class="icon ion-email placeholder-icon"></i>
+                            <input size="40"  type="email" ua-is-email placeholder="Email" name="login">
+                        </div>
+                    </div>
+                    <div class="col-10">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+
+                    </div>
+                    <div class="col">
+                        <div class="item item-input-inset less-padding">
+                            <i class="icon ion-asterisk placeholder-icon"></i>
+                            <input name="password" placeholder="Password" type="password">
+                        </div>
+                    </div>
+                    <div class="col-10">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-40">
+
+                    </div>
+                    <div class="col col-20">
+
+                    </div>
+                    <div class="col col-40">
+                        <a style="color:#ffffff" href="#/reset-password">Reset password</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class=" button-bar">
+           <button class="button button-balanced " type="submit">Register</button>
+               <button class="button button-balanced " type="submit">Login</button>
+            </div>
+
+        </form>
+
+
+</form>
+    </ion-content>
+
+<p ng-show="verificationEmailSent">An email has been sent to your inbox. Click on the link to verify your account.</p>
+<p><a href="#/login">Log in</a></p>
+</ion-view>

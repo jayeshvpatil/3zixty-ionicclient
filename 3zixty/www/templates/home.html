@@ -1,0 +1,52 @@
+<body ng-controller="HomeCtrl as vm">
+<ion-view >
+    <ion-content class="dark-bg">
+        <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()">
+        </ion-refresher>
+
+        <div class="list card" ng-repeat="d in deals">
+
+            <div class="item item-avatar">
+                <h3>{{d.deal.title}}</h3>
+
+            </div>
+
+            <div class="item item-body item-divider item-image">
+                 <img src="{{d.deal.image_url}}" >
+
+
+            </div>
+            <div class="item item-calm">
+                <h3>Reach In {{d.rows[0].elements[0].duration.text}}</h3>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>
+<script id="settings.html" type="text/ng-template">
+    <div id="settings-modal" class="modal" ng-controller="HomeCtrl">
+        <ion-header-bar class="bar">
+            <h1 class="title">Settings</h1>
+            <button class="button button-clear" ng-click="closeSettings()">Close</button>
+        </ion-header-bar>
+        <ion-content has-header="true">
+            <div class="padding">
+                <div class="list">
+                    <label class="item item-input">
+                        <span class="input-label">Mode of transport</span>
+
+                        <ion-radio-buttons ng-model="settings.tempUnits">
+                            <button class="button button-positive button-radio" ng-value="'Walk'">Walk</button>
+                            <button class="button button-positive button-radio" ng-value="'Bike'">Bike</button>
+                            <button class="button button-positive button-radio" ng-value="'Drive'">Drive</button>
+
+                        </ion-radio-buttons>
+                    </label>
+
+                </div>
+            </div>
+        </ion-content>
+    </div>
+</script>
+</body>
